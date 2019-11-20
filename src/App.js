@@ -1,13 +1,13 @@
 import React from "react";
+import CardDisplay from "./components/cardDisplay";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
+      <h1>Picture of the Day</h1>
+      <hr></hr>
+      <CardDisplay />
     </div>
   );
 }
