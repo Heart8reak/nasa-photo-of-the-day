@@ -5,7 +5,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <h1>Picture of the Day</h1>
+      <h1>Astronomy Picture of the Day (APOD)</h1>
       <hr></hr>
       <CardDisplay />
     </div>
