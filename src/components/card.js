@@ -1,13 +1,24 @@
 import React from 'react';
+import {
+    CardImg, CardText, CardBody,
+    CardTitle, CardSubtitle, Button, Row, Col
+} from 'reactstrap';
 
 const CardSample = props => {
     return (
-        <div>
-            <img alt="Nasa Pic of the Day" src={props.url} />
-            <h2>{props.title}</h2>
-            <h3>{props.date}</h3>
-            <p>{props.explanation}</p>
-        </div>
+        // <div>
+        <Row>
+            <Col sm="4" md={{ size: 6, offset: 3 }}>
+                <CardImg top width="100%" src={props.url} alt="Card image cap" />
+                <CardBody>
+                    <CardTitle>{props.title}</CardTitle>
+                    <CardSubtitle>{props.date}</CardSubtitle>
+                    <CardText>{props.explanation}</CardText>
+                    <Button>Button</Button>
+                </CardBody>
+            </Col>
+        </Row>
+        // </div>
     )
 };
 
